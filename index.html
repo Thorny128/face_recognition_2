@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Family Face Recognition</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1 class="btn btn-default heading">Family Face Recognition App</h1>
+                <h4>People used in this model: Alex Kuriakose and Krupa Vinu</h4>
+                <br>
+                <br>
+
+                <p>Model is trained to identify the following people: </p>
+
+                <b class="name_of_person">
+                    Alex (Brother)
+                    <hr>
+                    Krupa (Sister)
+                    <hr>
+                </b>
+
+                <label>Webcam View - </label>
+                <div id="camera"></div>
+                <br><br>
+                <div id="result"></div>
+                <br><br>
+                <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+                <br><br>
+                <button onclick="check()" class="btn btn-success">Identify Image</button>
+                <br><br>
+                <p style="font-size:22px;">Person:  <span id="result_person_name"></span></p>
+                <p style="font-size:22px;">Accuracy: <span id="result_object_accuracy"></span> </p>
+            </center>
+
+        </div>
+
+        <script src="main.js"></script>
+        
+    </body>
+</html>
